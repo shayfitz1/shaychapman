@@ -1,0 +1,114 @@
+.project-container{
+    background-color: rgb(223, 219, 219);
+    padding: 30px 0 75px 0;
+}
+
+.projects-list{
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 5000px;
+    justify-content: space-evenly;
+    width: 75%;
+    margin: 30px auto;
+}
+
+.project{
+    position: relative;
+    margin: 3px;
+    width: calc(33.33% - 12px);
+    height: 225px;
+    transform-style: preserve-3d;
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); */
+}
+
+.project-intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-back, .project-front{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    transition: all 0.4s;
+}
+
+.faded{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.project-back{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(233, 229, 229);
+    z-index: -1;
+}
+
+.project-back a{
+    background-color: #ff5722;
+    color: white;
+    padding: 10px;
+    margin: 20px;
+}
+
+.project-back h3{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.project-back p{
+    font-size: 0.7rem;
+}
+
+.project-back a:hover{
+    background-color: #d43e10;
+}
+
+
+/* =====================================
+               MEDIA QUERIES
+===================================== */
+@media all and (max-width: 1200px){
+    .project{
+        height: 200px;
+        transition: none;
+    }
+}
+
+/* ==========iPad pro width=========== */
+@media all and (max-width: 1024px){
+    .projects-list{
+        margin-top: 40px;
+        width: 90%;
+        align-items: center;
+    }
+    
+    .project{
+        width: calc(49% - 20px);
+        height: 195px;
+        margin: 10px;
+    }
+}
+
+
+/* ==========Phone width=========== */
+@media all and (max-width: 420px){
+    #project-head{
+        margin-top: 50px;
+    }
+    
+    .projects-list{
+        margin-bottom: -40px;
+        width: 100%;
+    }
+
+    .project{
+        width: 100%;
+    }
+}

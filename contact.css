@@ -1,0 +1,238 @@
+.contact-container{
+    padding: 30px 0 75px 0;
+    background-color: rgb(145, 143, 143);
+    position: relative;
+}
+
+.divider{
+    width: 0;
+    height: 0;
+    border-left: 50vw solid transparent;
+    border-right: 50vw solid transparent;
+    border-top: 70px solid rgb(223, 219, 219);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.contact-intro{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-head, .contact-intro p{
+    color: white;
+}
+
+.contact-icons{
+    display: flex;
+    width: 20%;
+    height: 3em;
+    margin: 30px auto;
+    justify-content: space-evenly;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.3em;
+    width: 2.3em;
+    border-radius: 50%;
+    transition: all 0.2s;
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    -webkit-box-shadow: 0 1px 2px 0px rgb(0, 0, 0); 
+    box-shadow: 0 1px 2px 0px rgb(0, 0, 0);
+    background-color: #434a53;
+}
+
+.contact:hover{
+    transform: scale(1.4);
+    border-radius: 100px;
+    animation-name: spin;
+    animation-duration: 1.5s;
+}
+
+#facebook-icon:hover{background-color: #4267b2;}
+#twitter-icon:hover{background-color: #41acee;}
+#linkedin-icon:hover{background-color: #2675b3;}
+#email-icon:hover{background-color: #dd4b3f;}
+
+.contact:active{
+    margin-top: 2px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 250px;
+    margin: 50px auto 20px auto;
+    background-color: #303841;
+    padding: 20px;
+    position: relative;
+}
+
+.form-info{
+    padding-left: 10px;
+    border: none;
+    margin: 2px 0;
+}
+
+#name, #email{
+    height: 30px;
+}
+
+textarea{
+    padding-top: 6px;
+    height: 100px;
+}
+
+#submit{
+    font-size: 14px;
+    font-weight: 700;
+    width: 30%;
+    height: 40px;
+    outline: none;
+    background-color: #ff5722;
+    margin-top: 10px;
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    letter-spacing: 1px;
+    -webkit-appearance: none;
+}
+
+#submit:hover{
+    background-color: #d43e10;
+}
+
+#thank-you{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 172, 181, 0.856);
+    color: #eeeeee;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    text-align: center;
+    line-height: 30px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0) scale(1.4);
+    }
+    25% {
+        transform: rotate(-35deg) scale(1.4);
+    }
+    50% {
+        transform: rotate(35deg) scale(1.4);
+    }
+    75% {
+        transform: rotate(-35deg) scale(1.4);
+    }
+    100% {
+        transform: rotate(0) scale(1.4);
+    }
+  }
+
+
+
+/* =====================================
+               MEDIA QUERIES
+===================================== */
+@media all and (max-width: 1200px){
+    form{
+        width: 60%;
+        height: 275px;
+        justify-content: space-between;
+    }
+
+    .contact-icons{
+        width: 23%;
+    }
+
+    .contact:hover{
+        transform: none;
+        animation: none;
+    }
+
+    #facebook-icon:hover{background-color: #434a53;}
+    #twitter-icon:hover{background-color: #434a53;}
+    #linkedin-icon:hover{background-color: #434a53;}
+    #email-icon:hover{background-color: #434a53;}
+    
+    #facebook-icon:active{background-color: #4267b2;}
+    #twitter-icon:active{background-color: #41acee;}
+    #linkedin-icon:active{background-color: #2675b3;}
+    #email-icon:active{background-color: #dd4b3f;}
+}
+
+/* ==========iPad pro width=========== */
+@media all and (max-width: 1024px){
+    .contact-container{
+        height: 1200px;
+    }
+
+    .contact-intro{
+        margin-top: 80px;
+    }
+
+    .contact-intro p{
+        margin: 15px 100px;
+        text-align: center;
+    }
+    
+    .contact-icons{
+        width: 25%;
+    }
+}
+
+@media all and (max-width: 1000px){
+    .contact-icons{
+        width: 30%;
+    }
+}
+
+/* ==========iPad width=========== */
+@media all and (max-width: 768px){
+    .contact-icons{
+        width: 50%;
+    }
+
+    .contact-container{
+        height: 900px;
+    }
+}
+
+/* ==========Phone width=========== */
+@media all and (max-width: 420px){
+    .contact-container{
+        height: 770px;
+    }
+
+    .contact-intro p{
+        width: 300px;
+    }
+
+    form{
+        width: 350px;
+        margin-top: 20px;
+    }
+    
+    .contact-icons{
+        width: 65%;
+        height: 40px;
+    }
+}

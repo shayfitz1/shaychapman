@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shay Chapman - Front-End Developer</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">    
+    <script src="https://kit.fontawesome.com/b4633c0dbe.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=”description” content="I'm Shay Chapman, a senior media manager and freelance front-end web developer">
+    <meta name=”keyword” content="web developer, front-end, freelance, website, website developer, front-end developer, web designer, website designer, digital, HTML, CSS, JavScript">
+</head>
+<body>
+    <!-- ===== MAIN ===== -->
+    <main class="main-container" id="main-container">
+        <a href="#about-container" id="down-arrow-box"><i class="fas fa-angle-double-down"></i></a>
+        <div class="main-title">
+            <img src="Assets/logo.png" alt="logo" height="100px" width="120px">
+            <div>
+                <h1>Shay Chapman</h1>
+                <h3>Freelance Front-End Developer</h3>
+            </div>
+        </div>
+    </main>
+
+    <!-- ===== NAVIGATION ===== -->
+    <div id="hamburger"><i class="fas fa-bars"></i></div>
+    <nav class="navigation-container">
+        <a href="#main-container" class="nav-buttons" data-active="active"><i class="fas fa-angle-double-up" style="font-size: 25px"></i></a>
+        <a href="#about-container" class="nav-buttons"><h3>About</h3></a>
+        <a href="#project-container" class="nav-buttons"><h3>Projects</h3></a>
+        <a href="#contact-container" class="nav-buttons"><h3>Contact</h3></a>
+    </nav>
+
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about-container" id="about-container">
+        <div class="about-intro">
+            <h1 class="section-head" id="about-head">About</h1>
+            <hr class="header-underline">
+            <p>I'm Shay! A senior media manager, and freelance front-end developer in Atlanta, GA. </p>
+            <img src="Assets/shay2.jpg" alt="profile-photo" id="invis-photo">   
+        </div>
+        <div class="about-tabs">
+            <button data-selected="true">Professional</button>
+            <button>Personal</button>
+        </div>
+        <div class="about-info-container">
+            <div class="about-info" id="professional-section">
+                <div class="about-info-top">
+                    <img src="Assets/shay2.jpg" alt="profile-photo">
+                    <div class="skills-container">
+                        <div class="skills">
+                            <div class="skills-full-width">
+                                <div class="skills-fill" style="width: 0" data-fill="90"><span>HTML</span></div>
+                            </div><span class="percent">0%</span>
+                        </div>
+                        <div class="skills">
+                            <div class="skills-full-width">
+                                <div class="skills-fill" style="width: 0" data-fill="80"><span>CSS</span></div>
+                            </div><span class="percent">0%</span>
+                        </div>
+                        <div class="skills">
+                            <div class="skills-full-width">
+                                <div class="skills-fill" style="width: 0" data-fill="70"><span>JavaScript</span></div>
+                            </div><span class="percent">0%</span>
+                        </div>
+                        <div class="skills">
+                            <div class="skills-full-width">
+                                <div class="skills-fill" style="width: 0" data-fill="80"><span>Bootstrap</span></div>
+                            </div><span class="percent">0%</span>
+                        </div>
+                        <div class="skills">
+                            <div class="skills-full-width">
+                                <div class="skills-fill" style="width: 0" data-fill="80"><span>jQuery</span></div>
+                            </div><span class="percent">0%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-info-bottom">
+                    <h3 style="font-weight:700">Professional</h3>
+                    <p>Over the past 3 years I have worked in digital media, fine-tuning my skills 
+                        in everything from campaign management to tracking budgets to campaign 
+                        performance. During that time I’ve also gathered more technical skills 
+                        such as tag management and data binding implementation.
+                    </p>
+                    <p>At my core, I am creative-minded while also thinking logically on the steps 
+                        needed to find solutions, which is how I got into front-end web development. 
+                        I’m self-taught in front-end languages such as HTML, CSS, and JavaScript 
+                        after 100’s of hours of bootcamps, tutorials, and personal projects. I am 
+                        also familiar with some libraries and frameworks like Bootstrap, jQuery, 
+                        Vue.js, and learning more each day. 
+                    </p>
+                </div>
+            </div>
+            <div class="about-info" id="personal-section" style="display: none">
+                <div class="about-info-top">
+                    <img src="Assets/shay2.jpg" alt="profile-photo">                    
+                    <div class="skills-container">
+                        <div class="skills">
+                            <div class="skills-full-width full">
+                                <div class="skills-fill" style="width: 0" data-fill="100"><span>Breaking Bad Trivia</span></div>
+                            </div><span class="percent">0%</span>
+                        </div>
+                        <div class="skills">
+                            <div class="skills-full-width">
+                                <div class="skills-fill" style="width: 0" data-fill="90"><span>Movie Quotes</span></div>
+                            </div><span class="percent">0%</span>
+                        </div>
+                        <div class="skills">
+                            <div class="skills-full-width">
+                                <div class="skills-fill" style="width: 0" data-fill="80"><span>Juggling</span></div>
+                            </div><span class="percent">0%</span>
+                        </div>
+                        <div class="skills">
+                            <div class="skills-full-width">
+                                <div class="skills-fill" style="width: 0" data-fill="100"><span>Reasons to Remember the Name</span></div>
+                            </div><span class="percent">0%</span>
+                        </div>
+                        <div class="skills">
+                            <div class="skills-full-width">
+                                <div class="skills-fill" style="width: 0" data-fill="100"><span>Braeakfast for Dinner</span></div>
+                            </div><span class="percent">0%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-info-bottom">
+                    <h3 style="font-weight:700">Personal</h3>   
+                    <p>I’m just a regular guy in the neighborhood. I drink enough coffee to qualify as a 
+                        “caffeine overdose” on WebMD, and if given the opportunity I 
+                        WILL give your dog a belly rub. In my free time I write and perform standup 
+                        comedy, snowboard, kickbox, and rewatch the Dinner Party episode of The Office. 
+                    </p>
+                    <p>I consider myself a bit of an adrenaline junky, which should come as no 
+                        surprise for a web developer. Skydiving, zip-lining, answering a question 
+                        in front of a group - I do it all. I spent the past year living in Colorado 
+                        where I developed a love for snowboarding, a loathing for camping, and a 
+                        vengeance for the guy who stole the seat off my bike which gave me a very 
+                        uncomfortable ride back home.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="project-container" id="project-container">
+        <div class="project-intro">
+            <h1 class="section-head" id="project-head">Projects</h1>
+            <hr class="header-underline">
+        </div>
+        <div class="projects-list">
+            <div class="project">
+                <img src="Assets/drum.png" class="project-front" alt="keyboard-drum" width="375px" height="200px">
+                <div class="project-back">
+                    <h3>Keyboard Drum Kit</h3>
+                    <p>Wait, was that Owen Wilson?</p>
+                    <a href="https://shayfitz1.github.io/Keyboard-Drum/" target="_blank">See More</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="Assets/etch.png" class="project-front" alt="sketch" width="375px" height="200px">
+                <div class="project-back">
+                    <h3>Etch-a-Sketch</h3>
+                    <p>Happy little lines</p>
+                    <a href="https://shayfitz1.github.io/Etch/" target="_blank">See More</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="Assets/hulk.png" class="project-front" alt="hulk" width="375px" height="200px">
+                <div class="project-back">
+                    <h3>Whack-a-Hulk</h3>
+                    <p>I see this as an absolute win</p>
+                    <a href="https://shayfitz1.github.io/Whack-a-Hulk/" target="_blank">See More</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="Assets/color.png" class="project-front" alt="color" width="375px" height="200px">
+                <div class="project-back">
+                    <h3>RGB Color Game</h3>
+                    <p>Things aren't always rgb(0, 0, 0) and rgb(255, 255, 255)</p>
+                    <a href="https://shayfitz1.github.io/Color-Game/" target="_blank">See More</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="#" class="project-front" alt="TBD" width="375px" height="200px">
+                <div class="project-back">
+                    <h3>TBD</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur</p>
+                    <a href="#" target="_blank">See More</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="#" class="project-front" alt="TBD" width="375px" height="200px">
+                <div class="project-back">
+                    <h3>TBD</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur</p>
+                    <a href="#" target="_blank">See More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact-container" id="contact-container">
+        <div class="divider"></div>
+        <div class="contact-intro">
+            <h1 class="section-head" id="contact-head">Contact</h1>
+            <hr class="header-underline">
+            <p>Have a question? Want to work together? Want a new friend? Want to see me tweet at celebrities? Want to just say Hi?</p>
+        </div>
+        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfx_0wOCH5cqSw2o4xFC_02JTJ2d-zo9sa0N-kFxZal9NZ4tA/formResponse" target="hiddenFrame">
+            <input type="text" class="form-info" name="entry.740470052" id="name" placeholder="Name">
+            <input type="email" class="form-info" name="entry.129924292" id="email" placeholder="Email">
+            <textarea id="message" class="form-info" cols="50" rows="10" name="entry.282920049" placeholder="Your Message"></textarea>
+            <input id="submit" type="submit">
+            <div id="thank-you">Thanks for reaching out!<br>You've just earned +1 Shay points</div>
+        </form>
+        <iframe name="hiddenFrame" style="display: none"></iframe>
+        <div class="contact-icons">
+            <a class="contact" id="facebook-icon" href="https://www.facebook.com/shay.fitzmaurice" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a class="contact" id="twitter-icon" href="https://twitter.com/shayymeless" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            <a class="contact" id="linkedin-icon" href="https://www.linkedin.com/in/shaychapman/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a class="contact" id="email-icon" title="shayfitz1@gmail.com" href="mailto:shayfitz1@gmail.com" target="_blank"><i class="fas fa-envelope-square"></i></a>
+        </div>
+    </section>
+
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <hr>
+        <p>&copy; 2020 Shay Chapman. Most Rights Reserved.</p>
+    </footer>
+
+    <script src="shay.js"></script>
+</body>
+</html>
