@@ -170,13 +170,5 @@ document.body.addEventListener("keydown", function(e){
 
 // form submit. Doesn't work if any of fields are blank
 submitButton.addEventListener("click", function(e){
-    if (nameInput.value === "" || emailInput.value === "" || messageInput.value === ""){
-        e.preventDefault();
-    } else {
-        thankYouMessage.style.display = "flex";
-        setTimeout(() => thankYouMessage.style.display = "none", 3000);
-        nameInput.value = "";
-        emailInput.value = "";
-        messageInput.value = "";
-    }
+    nameInput.value === "" || emailInput.value === "" || messageInput.value === "" ? e.preventDefault() : thankYouMessage.style.display = "flex";
 })
